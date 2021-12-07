@@ -1,8 +1,5 @@
 from random import uniform
-
-from pageHandler import LoginPage,HomePage
-from pageHandler import fetchDriver
-
+from pagehandler import LoginPage,HomePage,fetchDriver
 from messagesender import MessageSender
 
 
@@ -10,7 +7,6 @@ MessageSender.send(message='mongi anamika')
 
 
 instadriver = fetchDriver()
-
 
 loginpage = LoginPage('username', 'password',driver=instadriver)
 homepage = HomePage(driver=instadriver)
